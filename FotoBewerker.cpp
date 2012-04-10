@@ -15,15 +15,17 @@ FotoBewerker::FotoBewerker()
 	this->showFotoScherm();
 }
 
+//toont het fotoscherm
+void FotoBewerker::showFotoScherm()
+{
+	fotoScherm->show();
+}
+
 //destructor verwijdert fotoscherm
 FotoBewerker::~FotoBewerker()
 {
 	delete this->fotoScherm;
 }
-
-
-
-
 
 /**
  * Called when a key is pressed.
@@ -32,7 +34,6 @@ void FotoBewerker::keyPressEvent(int keyCode, int nativeCode)
 {
 	if (MAK_BACK == keyCode )
 	{
-		// Call close to exit the application.
 		this->close();
 	}
 }

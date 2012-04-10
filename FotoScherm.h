@@ -26,13 +26,9 @@
 //fotoscherm bevat een optiescherm
 #include "OptieScherm.h"
 
-
-
 //deze namespaces zijn nodig om niet overal MAUtil:: en MAUI:: achter bijbehorende klassen te schrijven
 using namespace MAUtil;
 using namespace MAUI;
-
-
 
 //deze klasse is een Screen
 class FotoScherm : public Screen
@@ -43,6 +39,8 @@ private:
 	Label* achtergrondLabel;
 	Label* imageTekst;
 	Image* image;
+	int screenWidth;
+	int screenHeight;
 
 public:
 	FotoScherm();

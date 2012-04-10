@@ -8,7 +8,6 @@
 #ifndef FOTOBEWERKER_H_
 #define FOTOBEWERKER_H_
 
-
 //we gebruiken Screen klasse om schermen aan te maken
 #include <MAUtil/Moblet.h>
 #include <MAUI/Screen.h>
@@ -17,10 +16,8 @@
 using namespace MAUtil;
 using namespace MAUI;
 
-
 //we maken een fotoscherm, dit fotoscherm bevat weer een optiescherm
 #include "FotoScherm.h"
-
 
 //de klasse is een Moblet die events af kan vangen, en opgestart wordt in de main
 class FotoBewerker : public Moblet
@@ -33,6 +30,7 @@ public:
 	FotoBewerker();
 	virtual ~FotoBewerker();
 
+	void showFotoScherm();
 	void keyPressEvent( int keyCode, int nativeCode );
 };
 
